@@ -1,6 +1,6 @@
 import torch
 import matplotlib.pyplot as plt
-
+####
 def vicsek_fractal(iterations):
     # Initialize the matrix to be a 3x3 tensor
     matrix = torch.tensor([[1., 0., 1.], 
