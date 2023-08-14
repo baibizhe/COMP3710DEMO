@@ -25,13 +25,18 @@ def vicsek_fractal(iterations):
 
     return matrix
 
-# Set the number of iterations
-iterations = 1
 
-# Generate the fractal
-fractal = vicsek_fractal(iterations)
+plt.subplot(3,1,1)
+for i in range(1,4):
+  plt.subplot(3,1,i)
 
-# Plot the fractal
-plt.imshow(fractal, cmap="Greys")
+  # Set the number of iterations
+  iterations = i
+
+  # Generate the fractal
+  fractal = vicsek_fractal(iterations)
+
+  # Plot the fractal
+  plt.imshow(fractal, cmap="Greys")
 plt.axis('off')
 plt.show()
